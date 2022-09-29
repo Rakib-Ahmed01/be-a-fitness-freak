@@ -37,7 +37,7 @@ function App() {
             })}
           </div>
         </section>
-        <section className="w-[900px] h-screen sticky top-0 bg-cyan-200 text-black rounded p-2">
+        <section className="w-[900px] sticky top-0 bg-cyan-200/90 text-black rounded p-2">
           <ExcerciseDetails exerciseTime={exerciseTime} />
         </section>
       </main>

@@ -75,9 +75,7 @@ const ExcerciseDetails = ({ exerciseTime }) => {
   return (
     <div>
       <div>
-        {isActivityDone && (
-          <ReactConfetti className="mx-auto" width={170} height={600} />
-        )}
+        {isActivityDone && <ReactConfetti className="mx-auto" width={170} />}
       </div>
       <div className="font-medium">
         <div className="md:flex justify-center items-center  gap-1">

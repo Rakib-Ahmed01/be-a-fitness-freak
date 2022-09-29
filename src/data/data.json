@@ -2,42 +2,42 @@
   {
     "img": "https://image-hosting-rakib.netlify.app/images/running.jpg",
     "title": "Running",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "Running can give you a longer life, better sleep, improved immunity, mood and more—it’s even good for your knees...",
     "age": "10-60",
     "time": 30
   },
   {
     "img": "https://image-hosting-rakib.netlify.app/images/deadlift.jpg",
     "title": "Deadlift",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "The deadlift exercise and its variations require you to bend over while maintaining a braced, neutral spine...",
     "age": "18-40",
     "time": 15
   },
   {
     "img": "https://image-hosting-rakib.netlify.app/images/cycling.jpg",
     "title": "Cycling",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults.",
     "age": "10-50",
     "time": 30
   },
   {
     "img": "https://image-hosting-rakib.netlify.app/images/dumbbell.jpg",
     "title": "Dumbbell",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "Weight lifting with dumbbells lowers your risk of heart attack, stroke, and cardiovascular disease. Since strength training...",
     "age": "18-45",
     "time": 20
   },
   {
     "img": "https://image-hosting-rakib.netlify.app/images/pushup.jpg",
     "title": "Push Up",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "Push-ups may seem like a basic exercise that works only your upper arms and chest, but when you do them the right way, they...",
     "age": "18-45",
     "time": 30
   },
   {
     "img": "https://image-hosting-rakib.netlify.app/images/pullup.jpg",
     "title": "Pull Up",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique placeat quos magnam aperiam odio illum atque quo itaque explicabo.",
+    "desc": "Pullups also strengthen the arm and shoulder muscles. By performing pullups regularly, you’ll work the forearms and shoulders.",
     "age": "18-40",
     "time": 30
   }

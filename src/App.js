@@ -22,7 +22,7 @@ function App() {
       });
     } else {
       toast.success(
-        'New activity is set! I like your "Never Give Up" mindset.',
+        'New activity is set! I like your "Never Give Up" attitude.',
         {
           position: toast.POSITION.BOTTOM_RIGHT,
         }

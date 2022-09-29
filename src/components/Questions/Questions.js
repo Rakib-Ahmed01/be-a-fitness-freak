@@ -1,10 +1,11 @@
 import { Accordion } from 'flowbite-react';
+import { HiOutlineArrowCircleDown } from 'react-icons/hi';
 
 const Questions = () => {
   return (
     <div>
       <div className="my-7">
-        <Accordion alwaysOpen={true}>
+        <Accordion alwaysOpen={true} arrowIcon={HiOutlineArrowCircleDown}>
           <Accordion.Panel>
             <Accordion.Title>How does React work?</Accordion.Title>
             <Accordion.Content>

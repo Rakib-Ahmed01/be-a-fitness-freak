@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Card from './data/components/Card/Card';
-import FooterComponent from './data/components/Footer/Footer';
-import Header from './data/components/Header/Header';
+import Card from './components/Card/Card';
+import ExcerciseDetails from './components/ExcerciseDetails/ExcerciseDetails';
+import FooterComponent from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Questions from './components/Questions/Questions';
 import data from './data/data.json';
-import ExcerciseDetails from './ExcerciseDetails/ExcerciseDetails';
 
 function App() {
   const [exerciseTime, setExerciseTime] = useState(0);
@@ -58,6 +59,7 @@ function App() {
           <ExcerciseDetails exerciseTime={exerciseTime} notify={notify} />
         </section>
       </main>
+      <Questions />
       <FooterComponent />
       <ToastContainer />
     </div>

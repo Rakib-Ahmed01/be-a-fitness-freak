@@ -1,5 +1,5 @@
 import { Navbar } from 'flowbite-react';
-import logo from '../../../images/logo.svg';
+import logo from '../../images/logo.svg';
 
 const Header = () => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ReactConfetti from 'react-confetti';
 import { GoLocation } from 'react-icons/go';
-import BreakTimes from '../data/components/BreakTimes/BreakTimes';
+import BreakTimes from '../BreakTimes/BreakTimes';
 
 // toast.configure();
 const getBreakTime = () => {

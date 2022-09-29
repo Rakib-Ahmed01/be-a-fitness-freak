@@ -3,7 +3,7 @@ import logo from '../../../images/logo.svg';
 
 const Header = () => {
   return (
-    <header className="shadow-sm">
+    <header className="shadow-sm rounded-sm">
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand>
           <img src={logo} className="h-[50px] sm:h-9" alt="Flowbite Logo" />

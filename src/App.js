@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import Card from './data/components/Card/Card';
 import FooterComponent from './data/components/Footer/Footer';
 import Header from './data/components/Header/Header';
 import data from './data/data.json';
-
-console.log(data);
+import ExcerciseDetails from './ExcerciseDetails/ExcerciseDetails';
 
 function App() {
+  const [exerciseTime, setExerciseTime] = useState(0);
+
+  const handleAddToList = (min) => {
+    setExerciseTime((prevMins) => prevMins + min);
+  };
+
   return (
     <div className="container mx-auto relative">
       <Header />
@@ -14,19 +20,25 @@ function App() {
           Select Today's Exercise(s)
         </h2>
       </div>
-      <main className="mb-7 flex gap-2">
+      <main className="mb-7 flex gap-3">
         <section>
           <div
             id="cards"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
           >
             {data.map((card) => {
-              return <Card key={Math.random()} card={card} />;
+              return (
+                <Card
+                  key={Math.random()}
+                  card={card}
+                  handleAddToList={handleAddToList}
+                />
+              );
             })}
           </div>
         </section>
-        <section className="w-[800px] h-screen sticky top-0 bg-black text-white">
-          fgfsd
+        <section className="w-[900px] h-screen sticky top-0 bg-cyan-200 text-black rounded p-2">
+          <ExcerciseDetails exerciseTime={exerciseTime} />
         </section>
       </main>
       <FooterComponent />

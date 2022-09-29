@@ -3,6 +3,7 @@ import ReactConfetti from 'react-confetti';
 import { GoLocation } from 'react-icons/go';
 import BreakTimes from '../data/components/BreakTimes/BreakTimes';
 
+// toast.configure();
 const getBreakTime = () => {
   if (localStorage.getItem('breakTime')) {
     return +localStorage.getItem('breakTime');
@@ -13,7 +14,6 @@ const getBreakTime = () => {
 
 const getBreakTimes = () => {
   if (localStorage.getItem('breakTimes')) {
-    console.log(localStorage.getItem('breakTimes'));
     return JSON.parse(localStorage.getItem('breakTimes'));
   } else {
     return [
@@ -41,12 +41,10 @@ const getBreakTimes = () => {
   }
 };
 
-const ExcerciseDetails = ({ exerciseTime }) => {
+const ExcerciseDetails = ({ exerciseTime, notify }) => {
   const [breakTimes, setBreakTimes] = useState(getBreakTimes());
   const [isActivityDone, setIsActivityDone] = useState(false);
   const [breakTime, setBreakTime] = useState(getBreakTime());
-
-  console.log(breakTimes);
 
   useEffect(() => {
     localStorage.setItem('breakTime', breakTime);
@@ -57,7 +55,6 @@ const ExcerciseDetails = ({ exerciseTime }) => {
   }, [breakTimes]);
 
   const handleBreakTime = (minute) => {
-    console.log(minute);
     setBreakTime(minute);
     setBreakTimes((prevState) => {
       return prevState.map((breakTime) => {
@@ -139,14 +136,20 @@ const ExcerciseDetails = ({ exerciseTime }) => {
         {isActivityDone ? (
           <button
             className="bg-cyan-500 text-white w-full py-1 rounded font-semibold mt-2"
-            onClick={handleActivity}
+            onClick={(e) => {
+              handleActivity();
+              notify(e);
+            }}
           >
             Set New Activity
           </button>
         ) : (
           <button
             className="bg-cyan-500 text-white w-full py-1 rounded font-semibold mt-2"
-            onClick={handleActivity}
+            onClick={(e) => {
+              handleActivity();
+              notify(e);
+            }}
           >
             Activity Completed
           </button>

@@ -75,7 +75,7 @@ const ExcerciseDetails = ({ exerciseTime, notify }) => {
         {isActivityDone && <ReactConfetti className="mx-auto" width={170} />}
       </div>
       <div className="font-medium">
-        <div className="md:flex justify-center items-center  gap-1">
+        <div className="md:flex items-center  gap-2">
           <img
             src="https://images.unsplash.com/photo-1610088441520-4352457e7095?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             className="w-10 h-10 object-cover rounded-full"
